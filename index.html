@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body  class="bg-slate-500">
+    <header class=" flex bg-black h-36 justify-center items-center">
+        <h1 class="text-slate-100 text-5xl">BMI Calculator</h2>
+    </header>
+    <div class="pr-8 pl-8 pt-4 flex h-96 border-2 max-w-xl m-auto mt-32 rounded-md">
+        <form class="w-full flex flex-col gap-8">
+            <div class="flex items-center gap-20">
+                <label class="text-lg" for="gender">Gender:</label>
+                <div class="flex gap-4 items-center">
+                 <input class="w-4 h-4" type="radio" name="gender">
+                 <i class="fa-solid fa-child-dress text-2xl"></i>
+                </div>
+                
+                <div class="flex gap-4 items-center">
+                  <input class="w-4 h-4" type="radio" name="gender">
+                  <i class="fa-solid fa-child text-2xl"></i>
+                </div>
+                
+            </div>
+           
+           <div class="flex justify-between">
+            <label class="text-lg" for="weight">Weight (kg):</label>
+            <input class="pl-2 rounded-lg h-9 border-solid border-2 border-black w-96" type="text" id="weight" name="weight">
+           </div>
+           
+            <div class="flex justify-between">
+             <label class="text-lg" for="weight">Height(cm):</label>
+             <input class="pl-2 rounded-lg h-9 border-solid border-2 border-black w-96" type="text" id="height" name="height">
+            </div>
+           
+
+            <div class="flex justify-between">
+                <button class="bg-red-700 rounded-lg w-56 text-white h-9 text-lg" type="reset" id="reset">RESET</button>
+                <button class="bg-green-700 rounded-lg w-56 text-white h-9 text-lg" type="button" id="submit">CALCULATE</button>
+            </div>
+            
+
+            <div class="text-center text-2xl">
+                Your BMI is
+                <div id="result">0</div>
+                <div class="text-red-800" id="description"></div>
+            </div>
+        </form>
+       
+    </div>
+
+    
+</body>
+<script src="./script.js"></script>
+</html>

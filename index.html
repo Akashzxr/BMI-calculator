@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="./bmi.png" type="image/x-icon">
     <title>Document</title>
 </head>
 <body  class="bg-white">
     <header class=" flex bg-white h-28 justify-start items-center pl-9 gap-9 border-b-4 border-green-800 border-solid">
         <img class="w-12" src="./bmi.png" alt="">
-        <h1 class="text-gray-500 bold font-semibold font-mono tracking-wide text-6xl">BMI Calculator</h2>
+        <h1 class="text-gray-500 bold font-semibold font-mono tracking-wide text-2xl md:text-6xl">BMI Calculator</h2>
     </header>
-    <div class="form-container pr-8 pl-8 pt-4 flex h-max max-w-2xl m-auto mt-28 rounded-md">
+    <div class="form-container pr-8 pl-8 pt-4 flex h-max md:max-w-2xl m-auto mt-12 max-w-80 md:mt-28 rounded-md">
         <form class="w-full flex flex-col gap-8">
-            <div class="flex items-center gap-36">
-                <label class="text-xl font-mono font-medium" for="gender">Gender:</label>
+            <div class="flex items-center md:gap-36 gap-10">
+                <label class="md:text-xl text-lg font-mono font-medium" for="gender">Gender:</label>
                 <div class="flex gap-4 items-center">
                  <input class="w-4 h-4" type="radio" name="gender">
                  <i class="fa-solid fa-child-dress text-4xl"></i>
@@ -29,19 +30,19 @@
             </div>
            
            <div class="flex justify-between">
-            <label class="text-xl font-mono font-medium" for="weight">Weight (kg):</label>
-            <input placeholder="0" class="text-center text-gray-950 pl-2 rounded-lg h-9  w-96" type="text" id="weight" name="weight">
+            <label class="md:text-xl text-lg font-mono font-medium" for="weight">Weight (kg):</label>
+            <input placeholder="0" class="text-center text-gray-950 pl-2 rounded-lg h-9  md:w-96 w-36" type="text" id="weight" name="weight">
            </div>
            
             <div class="flex justify-between">
-             <label class="text-xl font-mono font-medium" for="weight">Height(cm):</label>
-             <input placeholder="0" class="pl-2 rounded-lg h-9  w-96 text-center" type="text" id="height" name="height">
+             <label class="md:text-xl text-lg font-mono font-medium" for="weight">Height (cm):</label>
+             <input placeholder="0" class="pl-2 rounded-lg h-9  md:w-96 w-36 text-center" type="text" id="height" name="height">
             </div>
            
 
             <div class="flex justify-between">
-                <button class="bg-red-700 rounded-lg w-56 text-white h-9 text-lg" type="reset" id="reset">RESET</button>
-                <button class="bg-green-700 rounded-lg w-56 text-white h-9 text-lg" type="button" id="submit">CALCULATE</button>
+                <button class="bg-red-700 rounded-lg md:w-56 w-28 text-white h-9 text-lg" type="reset" id="reset">RESET</button>
+                <button class="bg-green-700 rounded-lg md:w-56 w-28 text-white h-9 text-lg" type="button" id="submit">CALCULATE</button>
             </div>
             
 
